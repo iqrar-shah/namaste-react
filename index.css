@@ -1,0 +1,134 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app
+{
+    height:100%;
+    /* width:100%; */
+    font-family:'Source Sans Pro', sans-serif;
+    background-color: bisque;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgb(142, 165, 192); 
+    color:white;*/
+    font-size: 24px;
+    
+    margin:0;
+    padding:0;
+    border:1px solid #8fa5bf;
+}
+.logo-container > img{
+    width:100px;
+}
+
+.nav-container > ul {
+    display: flex;
+    padding:0;
+}
+.nav-container > ul >li{
+    list-style-type: none;
+    padding:0 10px;
+}
+li{
+    cursor: pointer;
+}
+.search-container{
+    margin:10px;
+    border-color: #8fa5bf;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    padding:10px 20px;
+    width:300px;
+    border-radius: 10px;
+}
+.res-card-container{
+    border:1px solid #8fa5bf;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.card{
+    border:1px solid black;
+    width:250px;
+    /* height:300px; */
+    /* background:rgb(144, 148, 153) ; 
+    color:white;*/
+    margin:20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card:hover{
+    border:2px solid #8fa5bf;
+}
+
+.card-details{
+    padding:10px;
+}
+.time-rating{
+    display: flex;
+    justify-content: space-between;
+}
+.cusine{
+    font-size: small;
+}
+.filter-btn{
+    border:1px solid gray;
+    padding:5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: lightgreen; */
+    border-radius: 10px;
+    width:70px;
+    cursor: pointer;
+}
+.search-btn{
+    border:1px solid gray;
+    padding:5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: lightgreen; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    padding:10px;
+    margin:20px;
+    border-radius: 5px;
+    .card-img{
+        width:250px;
+        height:220px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+
+    }
+    .card-title{
+        width:180px;
+        height:20px;
+        margin:20px 0 ;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+
+    }
+    .card-desc{
+        width:140px;
+        height:20px;
+        margin:15px 0 ;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+}
+
