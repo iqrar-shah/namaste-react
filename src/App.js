@@ -4,6 +4,9 @@ import  '../index.css';
 import Header from "./components/Header";
 import {BrowserRouter} from "react-router-dom"
 import Routing from "./components/Routing";
+import {UserContext} from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/redux/appStore";
 
 // React.createElement  => React Element(JS object)  ===> Html Element(Render)
 // const element = React.createElement("h1",{id:"heading"},"Namste React!!");
@@ -28,8 +31,13 @@ const App = ()=>{
 const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(
             <BrowserRouter>
-                <App/>
+                <Provider store={appStore}>
+                    <UserContext.Provider value={"Iqrar"}>
+                        <App/>
+                    </UserContext.Provider>
+                </Provider>
             </BrowserRouter>
+            
             );
 
 //<RouterProvider router={routes}/>
